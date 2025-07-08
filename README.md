@@ -25,10 +25,10 @@ This behavior demonstrates a basic digital input/output logic circuit.
 
 - 1× Arduino Uno  
 - 3× Push Buttons  
-- 3× LEDs (any color)  
-- 3× Resistors (220Ω recommended)  
+- 3× LEDs
+- 3× Resistors 
 - 1× Breadboard  
-- Jumper Wires  
+- Wires  
 
 ---
 
