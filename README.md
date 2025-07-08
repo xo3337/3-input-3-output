@@ -1,36 +1,41 @@
-#🔌 3-Input 3-Output Arduino Project
-This is a simple Arduino-based circuit with 3 push buttons and 3 LEDs designed in Tinkercad Circuits. Each button controls one LED.
+# 🔌 3-Input 3-Output Arduino Project
 
-#🌐 Tinkercad Link
-👉 [Click here to view the project](https://www.tinkercad.com/things/j2grzfGeZDa-brave-stantia-jofo)  
+This is a simple Arduino-based circuit with **3 push buttons** and **3 LEDs**, created using [Tinkercad Circuits](https://www.tinkercad.com/). Each button controls a corresponding LED.
 
-#🛠️ How It Works
-The circuit includes 3 buttons as inputs and 3 LEDs as outputs.
+---
 
-When a button is pressed, it sends a LOW signal to the Arduino.
+## 🌐 Tinkercad Link
 
-The Arduino then sets the corresponding output to LOW, turning the LED off.
+👉 [Click here to view the project on Tinkercad](https://www.tinkercad.com/things/j2grzfGeZDa-brave-stantia-jofo)
 
-When the button is not pressed, the input is HIGH, so the Arduino sends HIGH to the LED, turning it on.
+---
 
-This behavior simulates a simple digital control system where the button state directly controls the LED.
+## 🛠️ How It Works
 
-#🔢 Components Used
-1x Arduino Uno
+- The circuit includes **3 buttons** as inputs and **3 LEDs** as outputs.
+- When a **button is pressed**, it sends a **LOW signal** to the Arduino.
+- The Arduino then sets the matching output **LOW**, turning the LED **off**.
+- When the **button is not pressed**, the input is **HIGH**, so the Arduino sends a **HIGH signal** to the LED, keeping it **on**.
 
-3x Push Buttons
+This behavior demonstrates a basic digital input/output logic circuit.
 
-3x LEDs (Red, Green, Blue)
+---
 
-3x Resistors (220Ω)
+## 🔢 Components Used
 
-1x Breadboard
+- 1× Arduino Uno  
+- 3× Push Buttons  
+- 3× LEDs (any color)  
+- 3× Resistors (220Ω recommended)  
+- 1× Breadboard  
+- Jumper Wires  
 
-Jumper Wires
+---
 
+## 💡 Arduino Code
 
-#💡 Arduino Code
- int buttonPin = 2;
+```cpp
+int buttonPin = 2;
 int ledPin = 13;
 int buttonState = 0;
 
@@ -62,3 +67,7 @@ void loop() {
   digitalWrite(ledPin2, buttonState2);
   digitalWrite(ledPin3, buttonState3);
 }
+```
+
+---
+
